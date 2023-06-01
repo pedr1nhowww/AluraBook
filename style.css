@@ -1,0 +1,14 @@
+:root{
+    --cor-de-fundo :#EBECEE;
+}
+body{
+    background-color: #EBECEE;
+}
+h1{
+    background-color: rgba(206, 132, 41, 0.795);
+    text-align: center;
+    padding: 200px;
+    font-size: 67px;
+
+}
+
