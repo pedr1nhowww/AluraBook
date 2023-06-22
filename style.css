@@ -4,11 +4,31 @@
 body{
     background-color: #EBECEE;
 }
-h1{
-    background-color: rgba(206, 132, 41, 0.795);
-    text-align: center;
-    padding: 200px;
-    font-size: 67px;
+.menu-humburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url(./img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
 
+.cabeçalho {
+    background-color: rgb(179, 83, 66);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+.container-imagem{
+    padding: 22px;
+    margin: 09px;
+    width: 40px;
 }
 
