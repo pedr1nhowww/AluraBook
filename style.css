@@ -1,34 +1,132 @@
 :root{
-    --cor-de-fundo :#EBECEE;
+    --cor-de-fundo: #EBECEE;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --branco: #FFFFFF;
+    --fonte-principal: "Poppins"
 }
+
 body{
-    background-color: #EBECEE;
-}
-.menu-humburguer{
-    width: 24px;
-    height: 24px;
-    background-image: url(./img/menu.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight:700;
+    
 }
 
-.cabeçalho {
-    background-color: rgb(179, 83, 66);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
 
+.cabeçalho_menu_hamburguer{
+width: 44px;
+height: 30px;
+background-image: url(./img/Menu.svg);
+background-position: center;
+background-repeat: no-repeat;
+display: inline-block;
 }
 
-.container {
-    display: flex;
-    align-items: center;
+.cabeçalho{
+background-color: #FFFFFF;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
 }
+
+.container{
+display: flex;
+align-items: center;
+}
+
 .container-imagem{
-    padding: 22px;
-    margin: 09px;
-    width: 40px;
+    padding: 1em;
+    margin: 1em;
+    width: 4em;
+    height: 4em;
 }
 
+.container-botao:checked ~ .lista-menu{
+    display: block;
+}
+
+.lista-menu{
+    display: inline-block;
+    position: absolute;
+    top:80%;
+    width: 20vw;
+}
+
+.lista-menu_titulo,
+.lista-menu_item{
+    padding: 1em;
+    background-color:var(--branco);
+}
+
+.lista-menu_titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu_link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     background-clip: text;
+     text-transform: uppercase;
+}
+
+.container-botao{
+    display: none;
+}
+
+.lista-menu{
+    display: none;
+}
+
+.banner{
+    background-color: #002F52;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+}
+
+.banner-titulo{
+    font-weight: 700;
+    font-size: 60px;
+    padding: 3px;
+}
+
+.banner-texto{
+    font-weight: 500;
+    font-size: 30px;
+    text-align: justify;
+    text-align: center;
+    padding: 5px;
+}
+.pesquisa{
+    background-color: transparent;
+    border: 5px solid var(--branco);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    background: url("./img/lupa.svg")no-repeat;
+    background-position: 1em;
+    font-size: 30px;
+}
+
+.carrosel_titulo{
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 1em 0 0 .5em 0;
+}
+
+.swiper-slide img {
+    width: 50%;
+
+
+}
