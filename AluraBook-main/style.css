@@ -1,0 +1,160 @@
+:root{
+    --cor-de-fundo:#EBECEE;
+    --branco:#ffffff;
+    --laranja:#EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    }
+    body{
+        background-color: var(--cor-de-fundo);
+        font-family: var(--fonte-principal);
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+    .cabecalho_menu_hamburger{
+    width: 44px;
+    height: 30px;
+    background-image: url('./img/menu.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    }
+    .cabecalho{
+        background-color: var(--branco);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    
+    }
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .container_imagem {
+        padding: 1em;
+        margin: 1em;
+        width: 4em;
+        height: 4em;
+    }
+    .container_botao:checked ~ .lista-menu{
+        display: block;
+    }
+    .lista-menu{
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        width: 20vw;
+    }
+    .lista-menu_titulo,
+    .lista-menu-item{
+        padding: 1em;
+        background-color: var(--branco);
+    }
+    .lista-menu_titulo{
+        color: var(--laranja);
+        font-weight: 700;
+    }
+    .lista-menu_link{
+        background: var(--azul-degrade);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+    }
+    .container_botao{
+        display: none;
+    }
+    .lista-menu{
+        display: none;
+    }
+    .banner{
+        background-color: #002F52;
+        color:#EBECEE;
+        text-align: center;
+        padding: 1em;
+    }
+    .banner-titulo{
+        font-size: 60px;
+        font-weight: 700;
+        padding: 3px;
+    }
+    .banner-texto{
+        font-weight: 500;
+        font-size: 40px;
+        text-align: justify;
+        text-align: center;
+        padding: 13px;
+    } 
+    .banner-pesquisa{
+        background-color: transparent;
+        border: 5px solid var(--branco);
+        color: black;
+        border-radius: 24px;
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+        background: url("./img/lupa.svg") no-repeat;
+        background-position: 1em;
+        font-size: large;
+    }
+    .carrossel_titulo{
+        color: var(--laranja);
+        background-color: var(--branco);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 700;
+        padding: 1em 0em 0.5em 0em;
+    }
+    .swiper-slide img{
+        width:75%;
+        padding: 14px 55px;
+    }
+    .card-descricao{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5em;
+    }
+    .card-botoes{
+        display: flex;
+        justify-content: space-between;
+    }
+    .botoes{
+        display: flex;
+    }
+    .botoes-item{
+        padding: 23px;
+        align-items:baseline;
+        margin: 20px;
+        height: 2em;
+    }
+    .card{
+        background:#ffffff;
+        border-radius: 1em;
+        text-align: left;
+        padding: 1.7em;
+        margin: 3em;
+    }
+    .mais-vendidos-titulo{
+        color: var(--laranja);
+        background-color: var(--branco);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 700;
+        padding: 1em 0em 0.5em 0em;
+    
+    }
+    .mais-vendidos-imagem{
+        height: 400px;
+    }
+    .botoes-ancora{
+        background-color: var(--laranja);
+        padding: 1em 1em;
+        color: var(--branco);
+        font-weight: 700;
+        text-decoration: none;
+        align-items: center;
+        margin: 2em;
+    }
