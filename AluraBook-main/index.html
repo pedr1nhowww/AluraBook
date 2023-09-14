@@ -2,164 +2,247 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width" initial-scale="1.0"> 
+        <meta name="viewport" content="width-device-width" initial-scale="1.0">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="icon" type="image/png" href="https://tvhistoria.com.br/wp-content/uploads/2022/12/hora-do-faro-1-600x400.jpg"/>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>     
+    
     </head>
     <body>
-        <header class="cabecalho">
-            
+     <header class="cabeçalho"> 
+
+
+
+<div class="container">
+    <input type="checkbox" id="menu" class="container_botão">
+    
+    <label for="menu">
+<span class="cabeçalho_menu-hamburguer  container_imagem"> </span>
+    </label>
+    <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+<li class="lista-menu__item">
+<a href="#" class="lista-menu__link">Programação</a>
+</li>
+<li class="lista-menu__item">
+<a href="#" class="lista-menu__link">Front-end</a>
+</li>
+<li class="lista-menu__item">
+<a href="#" class="lista-menu__link">Infraestrutura</a>
+</li>
+<li class="lista-menu__item">
+<a href="#" class="lista-menu__link">Business</a>
+</li>
+<li class="lista-menu__item">
+<a href="#" class="lista-menu__link">Design & UX</a>
+</li>
+    </ul>
+
+<img src="./img/logo.svg"  class="container_imagem">
+    </div>
+
+
 
         <div class="container">
-            <input type="checkbox" id="menu" class="container_botao">
-            <label for="menu">
-
-            <span class="cabecalho_menu_hamburger    container_imagem"></span>
-
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu_titulo">Categorias</li>
-
-                <li class="lista-menu-item">
-                    <a href="#" class="lista-menu_link">Programação</a>
-                </li>
-                <li class="lista-menu-item">
-                    <a href="#" class="lista-menu_link">Front-end</a>
-                </li>
-                <li class="lista-menu-item">
-                    <a href="#" class="lista-menu_link">Infraestrutura</a>
-                </li>
-                <li class="lista-menu-item">
-                    <a href="#" class="lista-menu_link">Business</a>
-                </li>
-                <li class="lista-menu-item">
-                    <a href="#" class="lista-menu_link">Design & UX</a>
-                </li>
-
-            </ul>
-
-            <img class="container_imagem" src="./img/logo.png">
-            </div>
-
-           <div class="container">
-            <img class="container_imagem" src="./img/fav.svg">
-            <img  class="container_imagem" src="./img/Compras.svg">
-            <img class="container_imagem" src="./img/user.svg">
+        <img src="./img/favoritos.svg" class="container_imagem">
+        <img src="./img/compras.svg" class="container_imagem">
+        <img src="./img/usuario.svg" class="container_imagem">
         </div>
 
-        </header>
-<section class="banner">
-    <h2 class="banner-titulo"> Já sabe por onde começar?</h2>
-    <p class="banner-texto"> Encontre em nossa estante o que precisa para seu desenvolvimento! </p>
-    <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
-    
+
+
+            </header>
+
+
+
+   <section class="banner">
+  
+
+    <h2 class="banner-titulo"> Já sabe por onde começar? </h2>
 </section>
 
-<section class="carrossel">
-    <h2 class="carrossel_titulo">Novos Lançamentos</h2>
+
+
+
+
+
+
+
+    <p class="banner-texto"> Encontre em nossa estante o que precisa para
+         seu desenvolvimento! </p>
+         <input type="search" class="banner-pesquisa"
+          placeholder="Qual será sua próxima leitura?">
+
+   </section>    
+   
+
+
+
+
+
+
+   <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+
 
     <!-- Slider main container -->
 <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-        
-
       <!-- Slides -->
-      <div class="swiper-slide"> <img src="./img/1.svg"></div>
-      <div class="swiper-slide"> <img src="./img/2.svg"></div>
-      <div class="swiper-slide"> <img src="./img/3.svg"></div>
-      <div class="swiper-slide"> <img src="./img/4.svg"></div>
-      <div class="swiper-slide"> <img src="./img/5.svg"></div>
-      <div class="swiper-slide"> <img src="./img/1.svg"></div>
-      <div class="swiper-slide"> <img src="./img/2.svg"></div>
-      <div class="swiper-slide"> <img src="./img/3.svg"></div>
-      <div class="swiper-slide"> <img src="./img/4.svg"></div>
-      <div class="swiper-slide"> <img src="./img/5.svg"></div>
-      
-      ...
+      <div class="swiper-slide"><img src="./img/1.svg"></div>
+      <div class="swiper-slide"><img src="./img/2.svg"></div>
+      <div class="swiper-slide"><img src="./img/3.svg"></div>
+      <div class="swiper-slide"><img src="./img/4.svg"></div>
+      <div class="swiper-slide"><img src="./img/5.svg"></div>
+      <div class="swiper-slide"><img src="./img/1.svg"></div>
+      <div class="swiper-slide"><img src="./img/2.svg"></div>
+      <div class="swiper-slide"><img src="./img/3.svg"></div>
+      <div class="swiper-slide"><img src="./img/4.svg"></div>
+      <div class="swiper-slide"><img src="./img/5.svg"></div>
+      <div class="swiper-slide"><img src="./img/1.svg"></div>
+
     </div>
- <!-- If we need pagination -->
- <div class="swiper-pagination"></div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+
+  
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
   </div>
 
-<div class="card">
 
+
+  <div class="card">
     <div class="card-descricao">
-
-        <div class="descricao">
-            
-<h3 class="descricao-titulo">
-    Talvez você também se interesse por...
-</h3>
-<h2 class="descricao-texto">
-    Angular 11 e Firebase
-</h2>
-<p class="descricao-final">
-Construindo uma aplicação integrada com a plataforma do Google.
-</p>
-        </div>
-
-        <img class="descricao-imagem" src="./img/A.png">
-
+    <div class="descricao">
+<h3 class="descricao-titulo">Talvez você também se interesse por...</h3>
+<h2 class="descricao-titulo-livro">Angular 11 e Firebase</h2>
+<p class="descricao-texto">Construindo uma aplicação integrada com
+a plataforma do Google.</p>
     </div>
-<div class="card-botoes">
+    <img src="./img/logo.svg" class="descricao-imagem">
+    </div>
 
-<u1 class="botoes">
-    <lo> <img class="botoes-item" src="./img/fav.svg"></lo>
-    <lo> <img class="botoes-item" src="./img/Compras.svg"></lo>
-</u1>
-<a href="https://www.youtube.com/watch?v=OpDhsuI__qU" class="botoes-ancora">Saiba Mais</a>
-</div>
-
-</div>
-
-</section>
-
-<section class="mais-vendidos">
-    <h2 class="mais-vendidos-titulo"> MAIS VENDIDOS </h2>
-
-    <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
+    <div class="card-botoes">
+        <ul class="botoes">
+        <li class="botoes-item"><img src="./img/favoritos.svg"></li>
         
+        <li class="botoes-item"><img src="./img/compras.svg"></li>
+        </ul>
 
-      <!-- Slides -->
-      <div class="swiper-slide"> <img class="mais-vendidos-imagem" src="./img/livro1.jpg"></div>
-      <div class="swiper-slide"> <img class="mais-vendidos-imagem" src="./img/livro7.jpeg"></div>
-      <div class="swiper-slide"> <img class="mais-vendidos-imagem" src="./img/livro6.jpg"></div>
-      <div class="swiper-slide"> <img class="mais-vendidos-imagem" src="./img/livro5.jpg"></div>
-      <div class="swiper-slide"> <img class="mais-vendidos-imagem" src="./img/livro2.jpg"></div>
-      <div class="swiper-slide"> <img class="mais-vendidos-imagem" src="./img/livro4.jpeg"></div>
-      <div class="swiper-slide"> <img class="mais-vendidos-imagem" src="./img/livp8.jpg"></div>
-     
-      ...
+<a href="#" class="botoes-ancora">Saiba mais</a>
+        </div>
     </div>
- <!-- If we need pagination -->
- <div class="swiper-pagination"></div>
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
+   </section>
+
+
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais Vendidos</h2>
     
+    
+    
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./img/1.jpeg"></div>
+          <div class="swiper-slide"><img src="./img/2.jpeg"></div>
+          <div class="swiper-slide"><img src="./img/3.jpeg"></div>
+          <div class="swiper-slide"><img src="./img/4.jpeg"></div>
+          <div class="swiper-slide"><img src="./img/5.jpg"></div>
+          <div class="swiper-slide"><img src="./img/1.jpeg"></div>
+          <div class="swiper-slide"><img src="./img/2.jpeg"></div>
+          <div class="swiper-slide"><img src="./img/3.jpeg"></div>
+          <div class="swiper-slide"><img src="./img/4.jpeg"></div>
+          <div class="swiper-slide"><img src="./img/5.jpg"></div>
+          
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+    
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    
+      <div class="card">
+        <div class="card-descricao">
+        <div class="descricao">
+    <h3 class="descricao-titulo"><img src="./img/estrela.png">
+    <h3 class="descricao-titulo">Autora do mês</h3>
+    <h2 class="descricao-titulo-livro">JUliana Ankarikov</h2>
+    <p class="descricao-texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+        </div>
+        <img src="./img/muca.jpeg" class="descricao-imagem">
+        </div>
+    
+        <div class="card-botoes">
+            <ul class="botoes">
+            <li class="botoes-item"><img src="./img/favoritos.svg"></li>
+            
+            <li class="botoes-item"><img src="./img/compras.svg"></li>
+            </ul>
+    
+    <a href="#" class="botoes-ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
 
-</section>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-<script> const swiper = new Swiper('.swiper', { 
-    spaceBetween: 10,
-    slidesPerView: 5,
-    pagination: {
+    <section class="topicos">
+        <h2 class="Titulos-topicos"> Tópicos Visitados Recentementes</h2>
+        <ul class="Topicos-lista"> 
+
+            <lo> <a href="#" class="topicos-link">Android</a></lo>
+            <lo> <a href="#" class="topicos-link">Marketing Digital</a></lo>
+            <lo> <a href="#" class="topicos-link">OO</a></lo>
+            <lo> <a href="#" class="topicos-link">Agile</a></lo>
+            <lo> <a href="#" class="topicos-link">Startups</a></lo>
+            <lo> <a href="#" class="topicos-link">HTML & CSS</a></lo>
+            <lo> <a href="#" class="topicos-link">Java</a></lo>
+            <lo> <a href="#" class="topicos-link">Python</a></lo>
+
+        </ul>
+
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+  spaceBetween: 10,
+  slidesPerView: 4,
+
+  
+  pagination: {
     el: '.swiper-pagination',
-    type: 'bullets',},}); 
-    </script>  
+    type: 'bullets',
+  },
 
+});
+    </script>
+
+
+
+
+
+
+
+   
     </body>
 </html>
